@@ -33,13 +33,13 @@ class ConsoleIO {
         let executableName = (CommandLine.arguments[0] as NSString).lastPathComponent
         
         writeMessage("Usage:")
-        writeMessage("  ./\(executableName) -r <fromPath> <toPath>")
+        writeMessage("  ./\(executableName) -r <fromPath> <toPath>    Recurive mode.")
         writeMessage("or")
-        writeMessage("  ./\(executableName) -n <fromPath> <toPath>")
+        writeMessage("  ./\(executableName) -n <fromPath> <toPath>    Non-recursive mode.")
         writeMessage("or")
-        writeMessage("  ./\(executableName) -h or --help to show usage information")
+        writeMessage("  ./\(executableName)     Without an option to enter interactive mode.")
         writeMessage("or")
-        writeMessage("  ./\(executableName) without an option to enter interactive mode")
+        writeMessage("  ./\(executableName) -h or --help     Show usage information.")
     }
     
     func getInput() -> String {
